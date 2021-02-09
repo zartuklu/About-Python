@@ -50,6 +50,7 @@
  Değişken tipini belirtmemize gerek yoktur.
  Aynı girintiye(indentation) sahip olan değerler aynı seviyede çalışır.
  Birden fazla kelime içeren değişken adları için (_) kullanılabilir veya bitişik yazılabilir(python_3 ='githup',python3 ='githup').İki kelime arasında boşluk bırakılarak değişken tanımlamaz.(python 3 ='githup')
+ Birden fazla değişkene aynı değer atanabilir.-----> x,y,z = 1
  
 Uygun değişken adları:
  
@@ -72,6 +73,22 @@ my var = "John"
 Her kelime bir büyük harfle başlar: MyVariableName = "John"
 Her kelime bir alt çizgi karakteriyle ayrılır: my_variable_name = "John"
 
+# Python da hem metni hem de değişkeni birleştirmek için (+) karakteri kullanır. 
+x = "awesome"                           x = "Python is "
+                              =         y = "awesome"          =          Python is awesome
+print("Python is " + x)                 z =  x + y
+                                        print(z)
 
++ ifadesi metinler (strigns) birleştirir sayıları (int, float) toplar. metin ve sayıyı toplamaya çalışırsanız hata verir.
+
+# global anahtar kelimesi 
+
+x = "awesome"
+
+def myfunc():
+  global x
+  x = "fantastic"
+myfunc()
+print("Python is " + x)  
  
  
