@@ -14,20 +14,6 @@
  print('Hello There!') = print("Hello There!") = print('''Hello There!''')
  
  
- # Veri Tipleri
- 
-   String  ------> 'Kadir','Python', '3','True','7.5'
-   Number--------> 10, 10.5, 10+4j # integer,float,complex
-   List----------> ['python','githup']
-   Tuple---------> ('python','githup')
-   Dictionary----> {"brand": "Ford","model": "Mustang"}
-   Set-----------> {"apple", "banana", "cherry"}
-   Boolean-------> True veya False sonucunu verir.
-   
- # Number veri tiplerinden float ondalık kısma sahip olan verilerdir. 3.8 ve 3.0 float verilerdir.
- # int verileri float a int(3.8) şeklinde çevirebiliriz ve sonuç 3 olacaktır. Sadece tam kısım alınır.
- # float verileri int e float(3) şeklinde çevirebiliriz ve sonuç 3.0 olacaktır. Tam kısım yanına ondalık kısım ilave edilir.
- 
  # bazı matematiksel ifadeler
  
  toplama (+)   4+3=7 ,  4+3.0=7.0 ,  4.0+3.0=7.0 ----> matematiksel herhangi bir işlemde float değer varsa sonuç float tır.
@@ -81,14 +67,64 @@ print("Python is " + x)                 z =  x + y
 
 + ifadesi metinler (strigns) birleştirir sayıları (int, float) toplar. metin ve sayıyı toplamaya çalışırsanız hata verir.
 
-# global anahtar kelimesi 
 
-x = "awesome"
-
-def myfunc():
-  global x
-  x = "fantastic"
-myfunc()
-print("Python is " + x)  
+ # Veri Tipleri
  
+   String  ------> 'Kadir','Python', '3','True','7.5'
+   Number--------> 10, 10.5, 10+4j # integer,float,complex
+   List----------> ['python','githup']
+   Tuple---------> ('python','githup')
+   Dictionary----> {"brand": "Ford","model": "Mustang"}
+   Set-----------> {"apple", "banana", "cherry"}
+   Boolean-------> True veya False sonucunu verir.
+   Range---------> x=range(6)
+   
+   
+ #int pozitif veya negatif olabilir.
+ #float pozitif veya negatif olabilir.x = 35e3=35000.0 --- float tır.
+ # number veri tiplerinden float ondalık kısma sahip olan verilerdir. 3.8 ve 3.0 float verilerdir.
+ # int verileri float a int(3.8) şeklinde çevirebiliriz ve sonuç 3 olacaktır. Sadece tam kısım alınır.
+ # float verileri int e float(3) şeklinde çevirebiliriz ve sonuç 3.0 olacaktır. Tam kısım yanına ondalık kısım ilave edilir.
+ # int ve flat veri tipini complex veri tipine çevirdiğimiz zaman ----> x=3 , y=2.8 complex(x)=3+0j  complex(y)=2+0j
+ 
+ # rastgele sayı üretmek için, (1 ile 9 arasında 10 dahil değil rastgele sayı üretmek için)
+ import random
+ print(random.randrange(1, 10))
+ 
+ x = int(1)   # x = 1
+ y = int(2.8) # y = 2
+ z = int("3") # z = 3
+ 
+ x = float(1)     # x = 1.0
+ y = float(2.8)   # y = 2.8
+ z = float("3")   # z = 3.0
+ w = float("4.2") # w = 4.2
+ 
+ x = str("s1") # x = 's1'
+ y = str(2)    # y = '2'
+ z = str(3.0)  # z = '3.0'
+ 
+ #string metotları
+ 
+ # len()İşlevi, bir dizenin uzunluğunu döndürür:
+ a='kadir' len(a)= 5 
+ 
+ #Bir dizede belirli bir kelime öbeği veya karakterin olup olmadığını kontrol etmek için 'in' anahtar kelimesini kullanabiliriz.
+ txt = "The best things in life are free!"
+ print("free" in txt) --------> True
+ 
+ txt = "The best things in life are free!"
+ if "free" in txt:
+ print("Yes, 'free' is present.")
+ 
+ # slicing işlemi(parça alma)
+ b = "Hello, World!"
+ print(b[2:5]) -----> llo
+ print(b[-3:-1])----> ld ----> -1 sonuncu karekteri ikafe etmektedir.
+ 
+ 
+ 
+   
+   
+
  
