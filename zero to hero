@@ -1,0 +1,14 @@
+#yorum satırı eklemek için (#) işreti kullanılır.
+'''
+    çoklu
+          yorum
+                satırı 
+                      için  
+                          (''') kullanılır.
+                                            '''
+                 
+ #yazılan kodun basılması için print konutu kullanılır.3 farklı şekilde yazılabilir.
+ 
+ print('Hello There!') = print("Hello There!") = print('''Hello There!''')
+ 
+ 
