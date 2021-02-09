@@ -23,5 +23,28 @@
    Dictionary----> {"brand": "Ford","model": "Mustang"}
    Set-----------> {"apple", "banana", "cherry"}
    Boolean-------> True veya False sonucunu verir.
+   
+ # Number veri tiplerinden float ondalık kısma sahip olan verilerdir. 3.8 ve 3.0 float verilerdir.
+ # int verileri float a int(3.8) şeklinde çevirebiliriz ve sonuç 3 olacaktır. Sadece tam kısım alınır.
+ # float verileri int e float(3) şeklinde çevirebiliriz ve sonuç 3.0 olacaktır. Tam kısım yanına ondalık kısım ilave edilir.
+ 
+ # bazı matematiksel ifadeler
+ 
+ toplama (+)   4+3=7 ,  4+3.0=7.0 ,  4.0+3.0=7.0 ----> matematiksel herhangi bir işlemde float değer varsa sonuç float tır.
+ çıkarma (-)   4-3=1 ,  4-3.0=1.0 ,  4.0-3.0=1.0 ----> matematiksel herhangi bir işlemde float değer varsa sonuç float tır.
+ çarpma  (*)   4*3=12,  4*3.0=12.0 , 4.0*3.0=12.0 ----> matematiksel herhangi bir işlemde float değer varsa sonuç float tır.
+ bölme   (/)   4/2=2 ,  4/2.0=2.0 ,  4.0/2.0=2.0 ----> matematiksel herhangi bir işlemde float değer varsa sonuç float tır.
+ tam_bölme(//) 4//3=1,  4//3.0=1.0 , 4.0//3.0=1.0 ----> sadece tam kısım alınıyor. -15//4 = -4
+ üs_alma (**)  4**3=64, 4**3.0=64.0, 4.0**3.0=64.0 ----> matematiksel herhangi bir işlemde float değer varsa sonuç float tır.
+ mod_alma (%)  14%3=2 , 14%3.0=2.0 , 14.0%3.0=2.0 ----> 2 sayının bölümünden kalanı verir.  
+ 
+ #değişkenler(variables)
+ 
+ Python da değişken atama kurallarından bazıları şunlardır:
+ Değişkenler rakam ile başlayamazlar. 1Python=3 diye kallanılamaz
+ Değişken oluşturulduktan sonra değer verilmelidir.
+ Büyük-küçük harf duyarlılığı vardır.
+ Aynı satırda farklı veri tiplerine ait değişkenler tanımlanabilir. ----> x,y,IsStudent=(1,2,3,'Kadir',True)
+ 
  
  
