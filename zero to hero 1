@@ -151,6 +151,36 @@ print("Python is " + x)                 z =  x + y
  Mesala  /mesaj1='Kadir geldi. Çayını yanına aldı. Çalışmaya başladı'/ olsun.
  print(mesaj1.split('.')) --> parantes içine noktadan ayır dersek sonuç: ['Kadir geldi', ' Çayını yanına aldı', ' Çalışmaya başladı']
  
+ # format ve f string metotları 
+ format içerisindeki ifade {} yerine geçecektir.
+ 
+ age = 36
+ txt = "My name is John, and I am {}"
+ print(txt.format(age)) ---->   My name is John, and I am 36
+ 
+ quantity = 3
+ itemno = 567
+ price = 49.95
+ myorder = "I want {} pieces of item {} for {} dollars."
+ print(myorder.format(quantity, itemno, price)) -----> I want 3 pieces of item 567 for 49.95 dollars.
+ 
+ {} ifadesinin içerisine degeğ girilerek sıralamaları belirlenebilir.
+ 
+ quantity = 3
+ itemno = 567
+ price = 49.95
+ myorder = "I want to pay {2} dollars for {0} pieces of item {1}."
+ print(myorder.format(quantity, itemno, price))
+ 
+ # find metodu
+ message='find metodu ile bir değerin olup olmadığı ve kaçıncı indeksle başladığı tespit edilebilir.'
+ print(message.find('tespit'))   ##-----> 72
+ print(message.find('olmadığı')) ##-----> 33
+ print(message.find('python'))   ##-----> -1 aradığımız değer yok ise -1 sonucunu döndürür.
+ 
+ 
+ 
+ 
  
  
  
