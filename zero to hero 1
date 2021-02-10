@@ -118,9 +118,50 @@ print("Python is " + x)                 z =  x + y
  print("Yes, 'free' is present.")
  
  # slicing işlemi(parça alma)
+ 
  b = "Hello, World!"
  print(b[2:5]) -----> llo
- print(b[-3:-1])----> ld ----> -1 sonuncu karekteri ikafe etmektedir.
+ print(b[-3:-1])----> ld ----> -1 sonuncu karekteri ifade etmektedir.
+ print(b[0::2])-----> Hlo ol! --> Sıfırıncı indeksten başla sonra kadar 2 şer git.(Herhangi bir olmayınca sona kadar gidiyor.)
+ print(b[:-1:2])----> Hlo ol ---> Sıfırdan başla -1 e kadar 2 şer git.(Herhangi bir olmayınca sıfırdan başlıyor.)
+ print(b[::2])------> Hlo ol! --> Başlangıç ve bitiş değerleri verilmesince  sıfırıncı indeksten başlayıp sonuncu indekse kadar 2 şer gider.
+ 
+ # replace stringleri geğiştirmek için kullanılır.( eski str, yeni str, kaç tanesi değişecek)
+ 
+ b = "Hello, World!, World!,World!"
+ print(b.replace('World!','There!',2))----->  2 tane World! u There! ile değiştir. Sonuç: Hello, There!, There!,World!
+ Herhangi bir adet değeri girilmeze tamamını değiştirir. print(b.replace('World!','There!')) -----> Hello, There!, There!,There!
+ 
+ # diğer bazı string metotları
+ 
+ x='python öğrenmek için Çok çalışmak Gerekiyor.'
+ print(x.upper()) ----> upper tüm karakterleri büyük harf yapıyor. PYTHON ÖĞRENMEK IÇIN ÇOK ÇALIŞMAK GEREKIYOR.
+ print(x.lower()) ----> lower tüm karakterleri küçük harf yapıyor. python öğrenmek için çok çalışmak gerekiyor.
+ print(x.title()) ----> title sadece baş harfleri büyük yapıyor. Python Öğrenmek Için Çok Çalışmak Gerekiyor.
+ print(x.capitalize())->capitalize sadece baş büyük diğerlerini küçük yapıyor. Python öğrenmek için çok çalışmak gerekiyor
+ 
+ # strip ve split komutları
+ 
+ mesaj='   Baştan ve sondan 3 karakter boşluk bıraktım   '
+ print(mesaj.strip()) ---> strip komutu baştan ve sondan boşlukları kaldırmak için kullanılır.sonuç:Baştan ve sondan 3 karakter boşluk bıraktım
+ (Sadece baştan kaldırmak için lstrip() , sadece sondan kaldırmak için rstrip() komutu kullanılabilir.)
+ 
+ print(mesaj.split()) ---> split komutu karakterleri boşluktan itibaren ayırıyor. sonuç: ['Baştan', 've', 'sondan', '3', 'karakter', 'boşluk', 'bıraktım']
+ split() komutunun paraztez içini boşluk bıraktığımız için başluktan itibaren ayırdı. Farklı bir ifade koysak onu baz alarak ayrım yapacaktı.
+ Mesala  /mesaj1='Kadir geldi. Çayını yanına aldı. Çalışmaya başladı'/ olsun.
+ print(mesaj1.split('.')) --> parantes içine noktadan ayır dersek sonuç: ['Kadir geldi', ' Çayını yanına aldı', ' Çalışmaya başladı']
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
  
