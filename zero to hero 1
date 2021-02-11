@@ -173,13 +173,58 @@ print("Python is " + x)                 z =  x + y
  print(myorder.format(quantity, itemno, price))
  
  # find metodu
- message='find metodu ile bir değerin olup olmadığı ve kaçıncı indeksle başladığı tespit edilebilir.'
+ message='find metodu ile bir değerin olup olmadığı ve kaçıncı indeksle başladığı tespit edilebilir.(find)'
  print(message.find('tespit'))   ##-----> 72
  print(message.find('olmadığı')) ##-----> 33
  print(message.find('python'))   ##-----> -1 aradığımız değer yok ise -1 sonucunu döndürür.
  
+ # center metodu
+ txt = "banana"
+ x = txt.center(20) ----> 20 karakterlik yer kaplar ve ortasında banana yazar.
+ string.center(length, character) şeklinde kullanılabilir.
+ txt = "banana"
+ x = txt.center(20, "O") ---> OOOOOOObananaOOOOOOO 20 karakter ortada banana yazan diğer karakterleri O olan değer döndürür.
+ 
+ # count() metodu
+ txt = "I love apples, apple are my favorite fruit"
+ x = txt.count("apple") ---> 2 sonucunu dönecektir.
+ string.count(value, start, end)  şeklinde kullanılabilir.
+ txt = "I love apples, apple are my favorite fruit"
+
+ x1 = txt.count("apple", 7, 20) ---> 2 verilen aralık 2 adet apple kelimesinin tamamını içeriyor.
+ x2 = txt.count("apple", 8, 20) ---> 1 verilen aralık 1 adet apple kelimesinin tamamını içeriyor.
+ x3 = txt.count("apple", 8, 16) ---> 0 verilen aralık 0 adet apple kelimesinin tamamını içeriyor.
+
+
+ 
+
+
  
  
+
+
+
+
+ 
+ 
+ 
+ 
+ # Escape Characters - Kaçış karakterleri
+ 
+ Çift tırnak içine alınmış bir dizge içinde çift tırnak kullanırsanız bir hata alırsınız:
+ 
+ txt = "We are the so-called "Vikings" from the north." hata verecektir.
+ 
+ Bu sorunu çözmek için kaçış karakterini kullanabiliriz.( \ ) :
+ 
+ txt = "We are the so-called \"Vikings\" from the north."
+ 
+ Python'da kullanılan diğer kaçış karakterleri:
+ \'  ---> txt = 'It\'s alright.'
+ \\  ---> txt = "This will insert one \\ (backslash)."
+ \n  ---> txt = "Hello\nWorld!"  yeni satıra geçer
+ \r  ---> txt = "Hello\rWorld!"  satır başı yapar   
+ \t  ---> txt = "Hello\tWorld!"  tab işlevi yapar
  
  
  
