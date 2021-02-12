@@ -194,6 +194,27 @@ print("Python is " + x)                 z =  x + y
  x1 = txt.count("apple", 7, 20) ---> 2 verilen aralık 2 adet apple kelimesinin tamamını içeriyor.
  x2 = txt.count("apple", 8, 20) ---> 1 verilen aralık 1 adet apple kelimesinin tamamını içeriyor.
  x3 = txt.count("apple", 8, 16) ---> 0 verilen aralık 0 adet apple kelimesinin tamamını içeriyor.
+ 
+ # endswith() metodu
+ bir değişkenin belirtilen değerde bitip bitmediğini True ve False olarak döndürür.
+ txt = "Hello, welcome to my world."
+ x = txt.endswith(".") ---> txt değişkeninin . ile bitip bitmediğini sorduk sonuç: True
+ string.endswith(value, start, end)  şeklinde kullanılabilir.
+ 
+ # startswith() metodu. 
+ bir değişkenin belirtilen değerde başlayıp başlamadığını True ve False olarak döndürür.   
+ txt = "Hello, welcome to my world."
+ x = txt.startswith("Hello") ---> txt değişkeninin "Hello" ile başlayıp başlamadığını sorduk sonuç: True
+ string.startswith(value, start, end) şeklinde kullanılabilir.
+ 
+ # format metodu
+ string.format(value1, value2...) şeklinde dışardan veri amka için kullanılır.
+ Aşağıdaki txt1, txt2 ve txt3 sonucu aynıdır ve My name is John, I'm 36 dır.
+ txt1 = "My name is {fname}, I'm {age}".format(fname = "John", age = 36) ---> parantez içindeki değişken ve değer format içinde verilebilir.
+ txt2 = "My name is {0}, I'm {1}".format("John",36)  ---> format içindeki değerler veirilen sıralamaya göre değer alır.
+ txt3 = "My name is {}, I'm {}".format("John",36) ---> herhangi bir sıralama verilmezse yazıldığı şekilde sıralama yaparak değer alır.
+ 
+ 
 
 
  
