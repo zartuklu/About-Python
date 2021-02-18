@@ -18,24 +18,24 @@
  
  toplama (+)   4+3=7 ,  4+3.0=7.0 ,  4.0+3.0=7.0 ----> matematiksel herhangi bir işlemde float değer varsa sonuç float tır.
  çıkarma (-)   4-3=1 ,  4-3.0=1.0 ,  4.0-3.0=1.0 ----> matematiksel herhangi bir işlemde float değer varsa sonuç float tır.
- çarpma  (*)   4*3=12,  4*3.0=12.0 , 4.0*3.0=12.0 ----> matematiksel herhangi bir işlemde float değer varsa sonuç float tır.
+ çarpma  (*)   4*3=12,  4*3.0=12.0 , 4.0*3.0=12.0 ---> matematiksel herhangi bir işlemde float değer varsa sonuç float tır.
  bölme   (/)   4/2=2 ,  4/2.0=2.0 ,  4.0/2.0=2.0 ----> matematiksel herhangi bir işlemde float değer varsa sonuç float tır.
- tam_bölme(//) 4//3=1,  4//3.0=1.0 , 4.0//3.0=1.0 ----> sadece tam kısım alınıyor. -15//4 = -4
- üs_alma (**)  4**3=64, 4**3.0=64.0, 4.0**3.0=64.0 ----> matematiksel herhangi bir işlemde float değer varsa sonuç float tır.
- mod_alma (%)  14%3=2 , 14%3.0=2.0 , 14.0%3.0=2.0 ----> 2 sayının bölümünden kalanı verir.  
+ tam_bölme(//) 4//3=1,  4//3.0=1.0 , 4.0//3.0=1.0 ---> sadece tam kısım alınıyor. (-15//4 = -4 )
+ üs_alma (**)  4**3=64, 4**3.0=64.0, 4.0**3.0=64.0 --> matematiksel herhangi bir işlemde float değer varsa sonuç float tır.
+ mod_alma (%)  14%3=2 , 14%3.0=2.0 , 14.0%3.0=2.0 ---> 2 sayının birbiriyle bölümünden kalanı verir.  
  
  #değişkenler(variables)
  
  Python da değişken atama kurallarından bazıları şunlardır:
  
  Değişkenler rakam ile başlayamazlar. 1Python=3 diye kallanılamaz.Değişken adı bir harf veya alt çizgi karakteri ile başlamalıdır.
- Bir değişken adı yalnızca alfa sayısal karakterler ve alt çizgiler (Az, 0-9 ve _) içerebilir.
+ Bir değişken adı yalnızca alfa sayısal karakterler ve alt çizgiler içerebilir.(Az, 0-9 ve _) 
  Değişken oluşturulduktan sonra değer verilmelidir.
- Büyük-küçük harf duyarlılığı vardır.
+ Büyük-küçük harf duyarlılığı vardır. ali=10 ve Ali=10 farklı değişkenlerdir.
  Aynı satırda farklı veri tiplerine ait değişkenler tanımlanabilir. ----> x,y,IsStudent=(1,2,3,'Kadir',True)
  Değişken tipini belirtmemize gerek yoktur.
  Aynı girintiye(indentation) sahip olan değerler aynı seviyede çalışır.
- Birden fazla kelime içeren değişken adları için (_) kullanılabilir veya bitişik yazılabilir(python_3 ='githup',python3 ='githup').İki kelime arasında boşluk bırakılarak değişken tanımlamaz.(python 3 ='githup')
+ Birden fazla kelime içeren değişken adları için (_) kullanılabilir veya bitişik yazılabilir.(python_3 ='githup',python3 ='githup').İki kelime arasında boşluk bırakılarak değişken tanımlamaz.(python 3 ='githup')
  Birden fazla değişkene aynı değer atanabilir.-----> x,y,z = 1
  
 Uygun değişken adları:
@@ -53,7 +53,7 @@ Uygun olmayan(hatalı) değişken adları:
 my-var = "John"
 my var = "John"
 
-#Birden fazla kelime içeren değişken isimlerin okunması zor olabilir.Bunları daha okunaklı hale getirmek için kullanabileceğiniz birkaç teknik vardır:
+# Birden fazla kelime içeren değişken isimlerin okunması zor olabilir.Bunları daha okunaklı hale getirmek için kullanabileceğiniz birkaç teknik vardır:
 
 İlki hariç her kelime büyük harfle başlar: myVariableName = "John"
 Her kelime bir büyük harfle başlar: MyVariableName = "John"
@@ -65,23 +65,23 @@ x = "awesome"                           x = "Python is "
 print("Python is " + x)                 z =  x + y
                                         print(z)
 
-+ ifadesi metinler (strigns) birleştirir sayıları (int, float) toplar. metin ve sayıyı toplamaya çalışırsanız hata verir.
+# + ifadesi metinler (strigns) birleştirir sayıları (int, float) toplar. metin ve sayıyı toplamaya çalışırsanız hata verir.
 
 
  # Veri Tipleri
  
-   String  ------> 'Kadir','Python', '3','True','7.5'
-   Number--------> 10, 10.5, 10+4j # integer,float,complex
-   List----------> ['python','githup']
-   Tuple---------> ('python','githup')
-   Dictionary----> {"brand": "Ford","model": "Mustang"}
-   Set-----------> {"apple", "banana", "cherry"}
-   Boolean-------> True veya False sonucunu verir.
-   Range---------> x=range(6)
+  String  ------> 'Kadir','Python', '3','True','7.5' ---> tırnak içinde yazılan herşey.
+  Number--------> 10, 10.5, 10+4j   ---> integer,float,complex
+  List----------> ['python','githup']
+  Tuple---------> ('python','githup')
+  Dictionary----> {"brand": "Ford","model": "Mustang"}
+  Set-----------> {"apple", "banana", "cherry"}
+  Boolean-------> True veya False sonucunu verir.
+  Range---------> x=range(6)
    
    
- #int pozitif veya negatif olabilir.
- #float pozitif veya negatif olabilir.x = 35e3=35000.0 --- float tır.
+ # int pozitif veya negatif olabilir.
+ # float pozitif veya negatif olabilir.x = 35e3=35000.0 --- float tır.
  # number veri tiplerinden float ondalık kısma sahip olan verilerdir. 3.8 ve 3.0 float verilerdir.
  # int verileri float a int(3.8) şeklinde çevirebiliriz ve sonuç 3 olacaktır. Sadece tam kısım alınır.
  # float verileri int e float(3) şeklinde çevirebiliriz ve sonuç 3.0 olacaktır. Tam kısım yanına ondalık kısım ilave edilir.
@@ -126,7 +126,7 @@ print("Python is " + x)                 z =  x + y
  print(b[:-1:2])----> Hlo ol ---> Sıfırdan başla -1 e kadar 2 şer git.(Herhangi bir olmayınca sıfırdan başlıyor.)
  print(b[::2])------> Hlo ol! --> Başlangıç ve bitiş değerleri verilmesince  sıfırıncı indeksten başlayıp sonuncu indekse kadar 2 şer gider.
  
- # replace stringleri geğiştirmek için kullanılır.( eski str, yeni str, kaç tanesi değişecek)
+ # replace stringleri değiştirmek için kullanılır.( eski str, yeni str, kaç tanesi değişecek)
  
  b = "Hello, World!, World!,World!"
  print(b.replace('World!','There!',2))----->  2 tane World! u There! ile değiştir. Sonuç: Hello, There!, There!,World!
@@ -214,19 +214,42 @@ print("Python is " + x)                 z =  x + y
  txt2 = "My name is {0}, I'm {1}".format("John",36)  ---> format içindeki değerler veirilen sıralamaya göre değer alır.
  txt3 = "My name is {}, I'm {}".format("John",36) ---> herhangi bir sıralama verilmezse yazıldığı şekilde sıralama yaparak değer alır.
  
+ # f string metodu
  
-
-
+ format metoduyla aynı işlevi yerine getirmektedir. Kullanımı daha basitttir.
+ name= "Kadir"
+ surname="Cokcevik"
+ yas=32
+ txt= f" My name is {name} {surname}, {yas} yaşındayım."
+ print(txt) --->  My name is Kadir Cokcevik, 32 yaşındayım.
  
-
-
+ # reverse()metodu
  
+ liste elemanlarını ters çeviriyor.
+ gurupPiton=["mesut","kadem","kadir"]
+ gurupPiton.reverse() 
+ print(gurupPiton) ---> ['kadir', 'kadem', 'mesut']
  
-
-
-
-
+ # min, max komutları
+ liste içerisindeki min ve max değerleri verir.
+ yas=[18,20,22,22,33,35,45,12,15,25,15]
+ enkucukYas=min(yas)
+ enbüyükYas=max(yas)
+ print(enkucukYas,enbüyükYas) ---> 12 45
+  
+ # clear metıdu
+ Dizinin tüm elamanlarını siler.
  
+ # append()
+ Listeye elaman eklemek için kullanılır.
+ yas=[18,20,22,22,33,35,45,12,15,25,15]
+ yas.append(75)
+ print(yas) ----> [18, 20, 22, 22, 33, 35, 45, 12, 15, 25, 15, 75]
+ 
+ # input
+ dişardan veri girişi yapmak için kullanılır.
+ ad=input("Adınızı giriniz : ")
+ print("merhaba" ad)
  
  
  
@@ -241,13 +264,42 @@ print("Python is " + x)                 z =  x + y
  txt = "We are the so-called \"Vikings\" from the north."
  
  Python'da kullanılan diğer kaçış karakterleri:
- \'  ---> txt = 'It\'s alright.'
- \\  ---> txt = "This will insert one \\ (backslash)."
+ \'  ---> txt = 'It\'s alright.'    It's alright.
+ \\  ---> txt = "This will insert one \\ (backslash)."  This will insert one \ (backslash).
  \n  ---> txt = "Hello\nWorld!"  yeni satıra geçer
  \r  ---> txt = "Hello\rWorld!"  satır başı yapar   
  \t  ---> txt = "Hello\tWorld!"  tab işlevi yapar
+ \   ---> txt = "Hello \       ---->  "Hello World!"
+                 World!"
+ 
+ ## Tuple
+ 
+ List elemanları [] ile oluşturulurken Tuple elamanları () ile oluşturulur.
+ Listede olduğu gibi index numaraları kullanılabilir.
+ Tuple de herhangi bir elama atama yapılamaz. (Tamamen değiştirilebilir.)
+ Tuple ile kullanılabilecek metotlar : index ve count tur.
+ 
+ ## Dictionary
+ Elemanları {} ile oluşturulmaktadır.
+ key:value şeklinde çalışmaktadır.
+ dictionary={'key':'value'} taslağında oluşturulmaktadır.
+ İç içe dictionary oluşturulabilir.
+ 
+ ## Sets
+ {} parantez ile oluşturulur.
+ index lenemez.
+ Elemanları tekrarlamaz.
+ İçindeki sıralama önemsizdir.
+ add, update, remove, pop, discard gibi metotları çalışır.
  
  
+ 
+ 
+ 
+ 
+ 
+ 
+ ## If ... Else
  
  
  
