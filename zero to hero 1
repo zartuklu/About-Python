@@ -20,7 +20,7 @@
  çıkarma (-)   4-3=1 ,  4-3.0=1.0 ,  4.0-3.0=1.0 ----> matematiksel herhangi bir işlemde float değer varsa sonuç float tır.
  çarpma  (*)   4*3=12,  4*3.0=12.0 , 4.0*3.0=12.0 ---> matematiksel herhangi bir işlemde float değer varsa sonuç float tır.
  bölme   (/)   4/2=2 ,  4/2.0=2.0 ,  4.0/2.0=2.0 ----> matematiksel herhangi bir işlemde float değer varsa sonuç float tır.
- tam_bölme(//) 4//3=1,  4//3.0=1.0 , 4.0//3.0=1.0 ---> sadece tam kısım alınıyor. (-15//4 = -4 )
+ tam_bölme(//) 4//3=1,  4//3.0=1.0 , 4.0//3.0=1.0 ---> sadece tam kısım alınıyor.Aşağıya yuvarlayacak şekilde (-15//4 = -4 )
  üs_alma (**)  4**3=64, 4**3.0=64.0, 4.0**3.0=64.0 --> matematiksel herhangi bir işlemde float değer varsa sonuç float tır.
  mod_alma (%)  14%3=2 , 14%3.0=2.0 , 14.0%3.0=2.0 ---> 2 sayının birbiriyle bölümünden kalanı verir.  
  
@@ -32,7 +32,7 @@
  Bir değişken adı yalnızca alfa sayısal karakterler ve alt çizgiler içerebilir.(Az, 0-9 ve _) 
  Değişken oluşturulduktan sonra değer verilmelidir.
  Büyük-küçük harf duyarlılığı vardır. ali=10 ve Ali=10 farklı değişkenlerdir.
- Aynı satırda farklı veri tiplerine ait değişkenler tanımlanabilir. ----> x,y,IsStudent=(1,2,3,'Kadir',True)
+ Aynı satırda farklı veri tiplerine ait değişkenler tanımlanabilir. ----> x,y,name,IsStudent=(1,2,3,'Kadir',True)
  Değişken tipini belirtmemize gerek yoktur.
  Aynı girintiye(indentation) sahip olan değerler aynı seviyede çalışır.
  Birden fazla kelime içeren değişken adları için (_) kullanılabilir veya bitişik yazılabilir.(python_3 ='githup',python3 ='githup').İki kelime arasında boşluk bırakılarak değişken tanımlamaz.(python 3 ='githup')
@@ -65,7 +65,7 @@ x = "awesome"                           x = "Python is "
 print("Python is " + x)                 z =  x + y
                                         print(z)
 
-# + ifadesi metinler (strigns) birleştirir sayıları (int, float) toplar. metin ve sayıyı toplamaya çalışırsanız hata verir.
+# + ifadesi metinler (strings) birleştirir sayıları (int, float) toplar. Metin ve sayıyı toplamaya çalışırsanız hata verir.
 
 
  # Veri Tipleri
@@ -106,7 +106,7 @@ print("Python is " + x)                 z =  x + y
  
  #string metotları
  
- # len()İşlevi, bir dizenin uzunluğunu döndürür:
+ # len() metodu bir dizenin uzunluğunu döndürür:
  a='kadir' len(a)= 5 
  
  #Bir dizede belirli bir kelime öbeği veya karakterin olup olmadığını kontrol etmek için 'in' anahtar kelimesini kullanabiliriz.
@@ -138,39 +138,19 @@ print("Python is " + x)                 z =  x + y
  print(x.upper()) ----> upper tüm karakterleri büyük harf yapıyor. PYTHON ÖĞRENMEK IÇIN ÇOK ÇALIŞMAK GEREKIYOR.
  print(x.lower()) ----> lower tüm karakterleri küçük harf yapıyor. python öğrenmek için çok çalışmak gerekiyor.
  print(x.title()) ----> title sadece baş harfleri büyük yapıyor. Python Öğrenmek Için Çok Çalışmak Gerekiyor.
- print(x.capitalize())->capitalize sadece baş büyük diğerlerini küçük yapıyor. Python öğrenmek için çok çalışmak gerekiyor
+ print(x.capitalize())->capitalize sadece ilk karakteri büyük diğerlerini küçük yapıyor. Python öğrenmek için çok çalışmak gerekiyor
  
  # strip ve split komutları
  
  mesaj='   Baştan ve sondan 3 karakter boşluk bıraktım   '
- print(mesaj.strip()) ---> strip komutu baştan ve sondan boşlukları kaldırmak için kullanılır.sonuç:Baştan ve sondan 3 karakter boşluk bıraktım
+ print(mesaj.strip()) ---> strip komutu baştan ve sondan boşlukları kaldırmak için kullanılır.Sonuç:Baştan ve sondan 3 karakter boşluk bıraktım
  (Sadece baştan kaldırmak için lstrip() , sadece sondan kaldırmak için rstrip() komutu kullanılabilir.)
  
- print(mesaj.split()) ---> split komutu karakterleri boşluktan itibaren ayırıyor. sonuç: ['Baştan', 've', 'sondan', '3', 'karakter', 'boşluk', 'bıraktım']
+ print(mesaj.split()) ---> split komutu karakterleri boşluktan itibaren ayırıyor. Sonuç: ['Baştan', 've', 'sondan', '3', 'karakter', 'boşluk', 'bıraktım']
  split() komutunun paraztez içini boşluk bıraktığımız için başluktan itibaren ayırdı. Farklı bir ifade koysak onu baz alarak ayrım yapacaktı.
- Mesala  /mesaj1='Kadir geldi. Çayını yanına aldı. Çalışmaya başladı'/ olsun.
+ Örneğin  /mesaj1='Kadir geldi. Çayını yanına aldı. Çalışmaya başladı'/ olsun.
  print(mesaj1.split('.')) --> parantes içine noktadan ayır dersek sonuç: ['Kadir geldi', ' Çayını yanına aldı', ' Çalışmaya başladı']
  
- # format ve f string metotları 
- format içerisindeki ifade {} yerine geçecektir.
- 
- age = 36
- txt = "My name is John, and I am {}"
- print(txt.format(age)) ---->   My name is John, and I am 36
- 
- quantity = 3
- itemno = 567
- price = 49.95
- myorder = "I want {} pieces of item {} for {} dollars."
- print(myorder.format(quantity, itemno, price)) -----> I want 3 pieces of item 567 for 49.95 dollars.
- 
- {} ifadesinin içerisine degeğ girilerek sıralamaları belirlenebilir.
- 
- quantity = 3
- itemno = 567
- price = 49.95
- myorder = "I want to pay {2} dollars for {0} pieces of item {1}."
- print(myorder.format(quantity, itemno, price))
  
  # find metodu
  message='find metodu ile bir değerin olup olmadığı ve kaçıncı indeksle başladığı tespit edilebilir.(find)'
@@ -183,7 +163,7 @@ print("Python is " + x)                 z =  x + y
  x = txt.center(20) ----> 20 karakterlik yer kaplar ve ortasında banana yazar.
  string.center(length, character) şeklinde kullanılabilir.
  txt = "banana"
- x = txt.center(20, "O") ---> OOOOOOObananaOOOOOOO 20 karakter ortada banana yazan diğer karakterleri O olan değer döndürür.
+ x = txt.center(20, "O") ---> OOOOOOObananaOOOOOOO   ---> 20 karakter ortada banana yazan diğer karakterleri O olan değer döndürür.
  
  # count() metodu
  txt = "I love apples, apple are my favorite fruit"
@@ -220,8 +200,8 @@ print("Python is " + x)                 z =  x + y
  name= "Kadir"
  surname="Cokcevik"
  yas=32
- txt= f" My name is {name} {surname}, {yas} yaşındayım."
- print(txt) --->  My name is Kadir Cokcevik, 32 yaşındayım.
+ txt= f" Benim adım {name} {surname}, {yas} yaşındayım."
+ print(txt) --->  Benim adım Kadir Cokcevik, 32 yaşındayım.
  
  # reverse()metodu
  
@@ -256,11 +236,9 @@ print("Python is " + x)                 z =  x + y
  # Escape Characters - Kaçış karakterleri
  
  Çift tırnak içine alınmış bir dizge içinde çift tırnak kullanırsanız bir hata alırsınız:
- 
  txt = "We are the so-called "Vikings" from the north." hata verecektir.
  
  Bu sorunu çözmek için kaçış karakterini kullanabiliriz.( \ ) :
- 
  txt = "We are the so-called \"Vikings\" from the north."
  
  Python'da kullanılan diğer kaçış karakterleri:
